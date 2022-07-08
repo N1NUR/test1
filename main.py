@@ -12,24 +12,6 @@ cv2.line(photo, (0, photo.shape[0] // 2), (photo.shape[1], photo.shape[0] // 2),
 cv2.imshow('Photo', photo)
 cv2.waitKey(0)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 x = 1
 
 img = cv2.imread('images/img.jpg')
@@ -44,3 +26,7 @@ img = cv2.erode(img, kernel, iterations=1)
 cv2.imshow('Result', img)
 
 cv2.waitKey(0)
+
+print("Hello!!!")
+print("Thanks for attention")
+
