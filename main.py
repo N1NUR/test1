@@ -30,17 +30,17 @@ cv2.waitKey(0)
 
 
 
-# x = 1
-#
-# img = cv2.imread('images/img.jpg')
-# img = cv2.resize(img, (img.shape[1] // x, img.shape[0] // x))
-# img = cv2.GaussianBlur(img, (5, 3), 4)
-# img = cv2.Canny(img, 150, 200)
-#
-# kernel = numpy.ones((5, 5), numpy.uint8)
-# img = cv2.dilate(img, kernel, iterations=1)
-# img = cv2.erode(img, kernel, iterations=1)
-#
-# cv2.imshow('Result', img)
-#
-# cv2.waitKey(0)
+x = 1
+
+img = cv2.imread('images/img.jpg')
+img = cv2.resize(img, (img.shape[1] // x, img.shape[0] // x))
+img = cv2.GaussianBlur(img, (5, 3), 4)
+img = cv2.Canny(img, 150, 200)
+
+kernel = numpy.ones((5, 5), numpy.uint8)
+img = cv2.dilate(img, kernel, iterations=1)
+img = cv2.erode(img, kernel, iterations=1)
+
+cv2.imshow('Result', img)
+
+cv2.waitKey(0)
